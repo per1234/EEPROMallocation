@@ -19,10 +19,10 @@ The concept for this library comes from the [EEPROMEx](https://github.com/thijse
 #### Usage
 See **EEPROMallocation.ino** for demonstration of library usage.
 
-`EEPROMallocation.setRange(startAddress[, endAddress])` - Set the range of EEPROM addresses that can be allocated
-- Parameter: **startAddress** - The first address of the EEPROM range available for allocation.
+`EEPROMallocation.setRange(startAddress[, endAddress])` - Set the range of EEPROM addresses that can be allocated.
+- Parameter: **startAddress** - The first address of the EEPROM range available for allocation. The initial value is 0.
   - Type: unsigned int
-- Parameter(optional): **endAddress** - The last address of the EEPROM range available for allocation. The default value is the last EEPROM address.
+- Parameter(optional): **endAddress** - The last address of the EEPROM range available for allocation. The default value is the last EEPROM address(AVR only). The initial value is the last EEPROM address for AVR or 511 otherwise.
   - Type: unsigned int
 - Returns: `true` = success, `false` = invalid range
   - Type: boolean

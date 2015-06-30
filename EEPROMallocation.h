@@ -7,7 +7,11 @@
 class EEPROMallocationClass {
   public:
     EEPROMallocationClass();
+#ifdef E2END
     boolean setRange(const unsigned int startAddressInput, const unsigned int endAddressInput = E2END);
+#else
+    boolean setRange(const unsigned int startAddressInput, const unsigned int endAddressInput);
+#endif
     int getAddress(const byte sizeInput = 1);
     byte getBit();
   private:

@@ -3,12 +3,20 @@
 
 
 EEPROMallocationClass::EEPROMallocationClass() {
+#ifdef E2END
   endAddress = E2END;  //default endAddress value
+#else
+  endAddress = 511;  //default endAddress value(if E2END is not specified just use a conservative value)
+#endif
 }
 
 
 boolean EEPROMallocationClass::setRange(const unsigned int startAddressInput, const unsigned int endAddressInput) {
+#ifdef E2END
   if (startAddressInput > endAddressInput || endAddressInput > E2END) {  //sanity check
+#else
+  if (startAddressInput > endAddressInput) {  //sanity check
+#endif
     return false;
   }
   startAddress = startAddressInput;
