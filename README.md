@@ -17,7 +17,7 @@ The concept for this library comes from the [EEPROMEx](https://github.com/thijse
 
 <a id="usage"></a>
 #### Usage
-See **EEPROMallocation.ino** for demonstration of library usage.
+See **File > Examples > EEPROMallocation > EEPROMallocationExample** for demonstration of library usage.
 
 `EEPROMallocation.setRange(startAddress[, endAddress])` - Set the range of EEPROM addresses that can be allocated.
 - Parameter: **startAddress** - The first address of the EEPROM range available for allocation. The initial value is 0.
