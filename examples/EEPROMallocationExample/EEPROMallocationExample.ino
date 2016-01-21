@@ -1,5 +1,5 @@
 // Demonstrates usage of the EEPROMallocation library
-#include "EEPROMallocation.h"
+#include <EEPROMallocation.h>
 #include <EEPROM.h>
 
 int address1;
