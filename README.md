@@ -22,7 +22,7 @@ See **File > Examples > EEPROMallocation > EEPROMallocationExample** for demonst
 **`EEPROMallocation.setRange(startAddress[, endAddress])`** - Set the range of EEPROM addresses that can be allocated.
 - Parameter: **startAddress** - The first address of the EEPROM range available for allocation. The initial value is 0.
   - Type: unsigned int
-- Parameter(optional): **endAddress** - The last address of the EEPROM range available for allocation. The default value is the last EEPROM address(AVR only). The initial value is the last EEPROM address for AVR or 511 otherwise.
+- Parameter(optional): **endAddress** - The last address of the EEPROM range available for allocation. The default value is the last EEPROM address(if `E2END` is defined). The initial value is the last EEPROM address if `E2END` is defined or 511 otherwise.
   - Type: unsigned int
 - Returns: `true` = success, `false` = invalid range
   - Type: boolean
