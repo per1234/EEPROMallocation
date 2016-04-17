@@ -19,7 +19,7 @@ The concept for this library comes from the [EEPROMEx](https://github.com/thijse
 #### Usage
 See **File > Examples > EEPROMallocation > EEPROMallocationExample** for demonstration of library usage.
 
-###### `EEPROMallocation.setRange(startAddress[, endAddress])`
+##### `EEPROMallocation.setRange(startAddress[, endAddress])`
 Set the range of EEPROM addresses that can be allocated.
 - Parameter: **startAddress** - The first address of the EEPROM range available for allocation. The initial value is 0.
   - Type: unsigned int
@@ -28,14 +28,14 @@ Set the range of EEPROM addresses that can be allocated.
 - Returns: `true` = success, `false` = invalid range
   - Type: boolean
 
-###### `EEPROMallocation.getAddress([size])`
+##### `EEPROMallocation.getAddress([size])`
 Get an available EEPROM address. EEPROMallocation will return the same address values every time the program is ran as long as the calls to `EEPROMallocation.getAddress()` are always in the same order.
 - Parameter(optional): **size** - The number of bytes required. If size is 0 then this function will return an address with available bits. The default value is 1 byte.
   - Type: byte
 - Returns: The allocated address or `-1` for no address available.
   - Type: int
 
-###### `EEPROMallocation.getBit()`
+##### `EEPROMallocation.getBit()`
 Get the next available bit of the EEPROM address returned by `EEPROMallocation.getAddress(0)`.
 - Returns: The allocated bit number.
   - Type: byte
