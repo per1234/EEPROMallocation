@@ -2,4 +2,3 @@ EEPROMallocation	KEYWORD1
 setRange	KEYWORD2
 getAddress	KEYWORD2
 getBit	KEYWORD2
-

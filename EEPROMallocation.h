@@ -25,4 +25,3 @@ class EEPROMallocationClass {
 
 extern EEPROMallocationClass EEPROMallocation;  //declare the class so it doesn't have to be done in the sketch
 #endif
-

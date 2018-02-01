@@ -59,4 +59,3 @@ byte EEPROMallocationClass::getBit() {
 
 
 EEPROMallocationClass EEPROMallocation;
-
