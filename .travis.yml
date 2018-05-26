@@ -28,9 +28,7 @@ before_install:
 
   # Check for typos
   - git clone https://github.com/ss18/grep-typos.git "${HOME}/scripts/grep-typos"
-  - cd "${HOME}/scripts/grep-typos"
-  - find "$TRAVIS_BUILD_DIR" -path "${TRAVIS_BUILD_DIR}/.git" -prune -or -type f -print0 | xargs --null --max-args=1 bash grep_typos.sh "$0"
-  - cd "$HOME"
+  - find "$TRAVIS_BUILD_DIR" -path "${TRAVIS_BUILD_DIR}/.git" -prune -or -type f -print0 | xargs --null --max-args=1 bash "${HOME}/scripts/grep-typos/grep_typos.sh" "$0"
   - rm "${HOME}/scripts/grep-typos" --recursive --force
 
   - git clone https://github.com/per1234/arduino-ci-script.git "${HOME}/scripts/arduino-ci-script"
