@@ -45,4 +45,4 @@ Get the next available bit of the EEPROM address returned by `EEPROMallocation.g
 
 
 #### Contributing
-Pull requests or issue reports are welcome! Please see the [contribution rules](https://github.com/per1234/EEPROMallocation/blob/master/CONTRIBUTING.md) for instructions.
+Pull requests or issue reports are welcome! Please see the [contribution rules](https://github.com/per1234/EEPROMallocation/blob/master/.github/CONTRIBUTING.md) for instructions.
